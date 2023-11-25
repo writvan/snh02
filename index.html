@@ -20,7 +20,7 @@
       </div>
       <div class="flex items-center space-x-4">
         <a href="#" class="hover:underline pr-8">Home</a>
-        <a href="chat.html" class="hover:underline pr-8">Tips</a>
+        <a href="#tips" class="hover:underline pr-8">Tips</a>
         <a href="#" class="hover:underline pr-8">Contact</a>
       </div>
     </div>
@@ -39,11 +39,37 @@
       </div>
     </div>
     <div class="flex-1">
-      <img src="https://cdn.dribbble.com/users/596968/screenshots/2334234/robby-wave-800x600.gif" alt="Your Image" class="w-full h-auto" style="height: 620px; width: 920px">
+      <img src="https://cdn.dribbble.com/users/596968/screenshots/2334234/robby-wave-800x600.gif" alt="Bot Image" class="w-full h-auto" style="height: 620px; width: 920px">
     </div>
   </div>
-  
-  <section class="text-gray-600 body-font">
+
+ <section id="chattalk" class="px-4 py-8">
+    <div class="container mx-auto">
+      <!-- Embed the Botpress Webchat code snippet here -->
+      <script src="https://cdn.botpress.cloud/webchat/v1/inject.js"></script>
+     <script>
+  window.botpressWebChat.init({
+      "composerPlaceholder": "Chat with Baymax",
+      "botId": "f4481279-6697-45a8-bf33-bcb743e516e5",
+      "hostUrl": "https://cdn.botpress.cloud/webchat/v1",
+      "messagingUrl": "https://messaging.botpress.cloud",
+      "clientId": "f4481279-6697-45a8-bf33-bcb743e516e5",
+      "webhookId": "76d50808-1ece-4bcd-b772-1d2fc49ec2e2",
+      "lazySocket": true,
+      "themeName": "prism",
+      "botName": "Baymax",
+      "avatarUrl": "https://freepngimg.com/download/animation/59275-hamada-tadashi-company-walt-baymax-the-drawing.png",
+      "stylesheet": "https://webchat-styler-css.botpress.app/prod/eb316640-4a58-491e-8c94-6155e9848fc4/v17590/style.css",
+      "frontendVersion": "v1",
+      "useSessionStorage": true,
+      "theme": "prism",
+      "themeColor": "#2563eb"
+  });
+</script>
+    </div>
+  </section>
+
+  <section id="tips" class="text-gray-600 body-font">
     <h2 class="text-5xl py-10 font-bold mb-4" style="text-align:center">Health Tips</h2>
     <div class="container px-5 mx-auto flex flex-wrap">
       <div class="flex relative pt-10 pb-20 sm:items-center md:w-2/3 mx-auto">
