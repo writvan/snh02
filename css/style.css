@@ -1,8 +1,8 @@
-.bg{
+/* Add these classes in your Tailwind CSS file or HTML file */
+.relative {
+    position: relative;
+}
+
+.absolute {
     position: absolute;
-    top:-2rem;
-    right: 0;
-    z-index:-1;
-    object-fit: cover;
-    height: 100vh;
 }
