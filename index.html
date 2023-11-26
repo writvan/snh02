@@ -18,19 +18,20 @@
 <body class="bg-white-100" style="margin-top: 60px;">
 
     <!-- Navbar -->
-    <nav class="bg-black p-4 text-white" style="position: fixed; top: 0; width: 100%; z-index: 999;">
-        <div class="container mx-auto flex items-center justify-between">
-            <div class="flex items-center space-x-4">
-                <img src="images/image.png" style="height: 40px; width: 40px;">
-                <a class="font-bold text-2xl">BotDoc</a>
-            </div>
-            <div class="flex items-center space-x-4">
-                <a href="#" class="hover:underline pr-8" style="font-weight: bold;">Home</a>
-                <a href="#tips" class="hover:underline pr-8" style="font-weight: bold;">Tips</a>
-                <a href="#contact" class="hover:underline pr-8" style="font-weight: bold;">Contact</a>
-            </div>
+   <nav class="bg-black p-4 text-white" style="position: fixed; top: 0; width: 100%; z-index: 999;">
+    <div class="container mx-auto flex items-center justify-between">
+        <div class="flex items-center space-x-4">
+            <img src="images/image.png" style="height: 40px; width: 40px;">
+            <a class="font-bold text-2xl">BotDoc</a>
         </div>
-    </nav>
+        <div class="flex items-center space-x-4" style="font-size: 14px;"> <!-- Example inline CSS -->
+            <a href="#" class="hover:underline pr-8" style="font-weight: bold;">Home</a>
+            <a href="#tips" class="hover:underline pr-8" style="font-weight: bold;">Tips</a>
+            <a href="#contact" class="hover:underline pr-8" style="font-weight: bold;">Contact</a>
+        </div>
+    </div>
+</nav>
+
 
 
  <!-- Image and Text Section -->
@@ -44,13 +45,17 @@
           </a>
       </div>
   </div>
-  <div class="flex-1 relative">
-      <img src="https://cdn.dribbble.com/users/596968/screenshots/2334234/robby-wave-800x600.gif" alt="Bot Image" class="w-full h-auto" style="height: 620px; width: 920px">
-  </div>
+  
+<div class="flex-1 relative">
+    <img src="https://cdn.dribbble.com/users/596968/screenshots/2334234/robby-wave-800x600.gif" alt="Bot Image" class="w-full h-auto" style="max-width: 100%; height: auto;">
+    <a href="disclaimer.html" style="padding-left: 17rem; position: relative;">Disclaimer<span style="color: red;">*</span></a>
 
-  <div class="absolute bottom-4 right-4" style="position: fixed; bottom: 2rem; right: 5rem;  ">
-      <img src="images/arrow.jpg" alt="Second Image" class="w-40 h-auto" style="background: transparent;">
-  </div>
+</div>
+
+<div class="absolute bottom-4 right-4" style="position: fixed; bottom: 2rem; right: 5rem;">
+    <img src="images/arrow.jpg" alt="Second Image" class="w-20 md:w-40 h-auto" style="background: transparent;">
+</div>
+
 
 </div>
 <div>
@@ -74,7 +79,6 @@
       });
   </script>
 </div>
-
 
   
   <section  id="tips" class="text-gray-600 body-font" style="padding-top: 2rem;">
