@@ -2,79 +2,79 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Your Website</title>
-  <!-- Include Tailwind CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-  <script src="index.js"></script>
-  <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
-  <script type="text/javascript">
-    emailjs.init("KMHLF9ZXxXmyBaTr_");
-  </script>
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BotDoc</title>
+    <link rel="icon" type="image/png" href="images/image.png"/>
+    <!-- Include Tailwind CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <script src="index.js"></script>
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script type="text/javascript">
+        emailjs.init("KMHLF9ZXxXmyBaTr_");
+    </script>
 </head>
 
 <body class="bg-white-100" style="margin-top: 60px;">
 
-  <!-- Navbar -->
-<nav class="bg-black p-4 text-white" style="position: fixed; top: 0; width: 100%; z-index: 999;">
-  <div class="container mx-auto flex items-center justify-between">
-    <div class="flex items-center space-x-4">
-      <img src="images/image.png" style="height: 40px; width: 40px;">
-      <a class="font-bold text-2xl">BotDoc</a>
-    </div>
-    <div class="flex items-center space-x-4">
-      <a href="#" class="hover:underline pr-8" style="font-weight: bold;">Home</a>
-      <a href="#tips" class="hover:underline pr-8" style="font-weight: bold;">Tips</a>
-      <a href="#contact" class="hover:underline pr-8" style="font-weight: bold;">Contact</a>
-    </div>
-  </div>
-</nav>
+    <!-- Navbar -->
+    <nav class="bg-black p-4 text-white" style="position: fixed; top: 0; width: 100%; z-index: 999;">
+        <div class="container mx-auto flex items-center justify-between">
+            <div class="flex items-center space-x-4">
+                <img src="images/image.png" style="height: 40px; width: 40px;">
+                <a class="font-bold text-2xl">BotDoc</a>
+            </div>
+            <div class="flex items-center space-x-4">
+                <a href="#" class="hover:underline pr-8" style="font-weight: bold;">Home</a>
+                <a href="#tips" class="hover:underline pr-8" style="font-weight: bold;">Tips</a>
+                <a href="#contact" class="hover:underline pr-8" style="font-weight: bold;">Contact</a>
+            </div>
+        </div>
+    </nav>
 
-  <!-- Image and Text Section -->
-  <div class="container mx-auto flex items-center p-4">
-    <div class="flex-1">
-        <h2 class="text-5xl font-bold mb-4 py-5"> Hello!!</h2>
+
+ <!-- Image and Text Section -->
+ <div class="container mx-auto flex items-center p-4">
+  <div class="flex-1">
+      <h2 class="text-5xl font-bold mb-4 py-5"> Hello!!</h2>
       <h2 class="text-5xl font-bold mb-4">How can I assist you today with your health concerns or inquiries? </h2>
       <div class="mt-12 py-7">
-        <a href="https://healthcare-ai.streamlit.app/" class="bg-green-500 text-white px-4 py-2 rounded-full hover:bg-green-600 items-center text-sm">
-          Predict a disease
-          <i class="fas fa-arrow-right ml-2"></i>
-        </a>
+          <a href="https://healthcare-ai.streamlit.app/" class="bg-green-500 text-white px-4 py-2 rounded-full hover:bg-green-600 items-center text-sm">
+              <i class="fas fa-chart-line ml-2"></i> Predict a disease
+          </a>
       </div>
-    </div>
- <div class="flex-1 relative">
-    <img src="https://cdn.dribbble.com/users/596968/screenshots/2334234/robby-wave-800x600.gif" alt="Bot Image" class="w-full h-auto" style="height: 620px; width: 920px">
-</div>
+  </div>
+  <div class="flex-1 relative">
+      <img src="https://cdn.dribbble.com/users/596968/screenshots/2334234/robby-wave-800x600.gif" alt="Bot Image" class="w-full h-auto" style="height: 620px; width: 920px">
+  </div>
 
-<div class="absolute bottom-4 right-4" style="position: fixed; bottom: 2rem; right: 5rem;  ">
-    <img src="images/arrow.jpg" alt="Second Image" class="w-40 h-auto" style="background: transparent;"">
-</div>
-
+  <div class="absolute bottom-4 right-4" style="position: fixed; bottom: 2rem; right: 5rem;  ">
+      <img src="images/arrow.jpg" alt="Second Image" class="w-40 h-auto" style="background: transparent;">
+  </div>
 
 </div>
 <div>
-<script src="https://cdn.botpress.cloud/webchat/v1/inject.js"></script>
-<script>
-  window.botpressWebChat.init({
-      "composerPlaceholder": "Chat with Baymax",
-      "hostUrl": "https://cdn.botpress.cloud/webchat/v1",
-      "messagingUrl": "https://messaging.botpress.cloud",
-      "clientId": "f4481279-6697-45a8-bf33-bcb743e516e5",
-      "webhookId": "76d50808-1ece-4bcd-b772-1d2fc49ec2e2",
-      "lazySocket": true,
-      "themeName": "prism",
-      "botName": "Baymax",
-      "avatarUrl": "https://freepngimg.com/download/animation/59275-hamada-tadashi-company-walt-baymax-the-drawing.png",
-      "stylesheet": "https://webchat-styler-css.botpress.app/prod/eb316640-4a58-491e-8c94-6155e9848fc4/v76738/style.css",
-      "frontendVersion": "v1",
-      "useSessionStorage": true,
-      "theme": "prism",
-      "themeColor": "#2563eb"
-  });
-</script>
+  <script src="https://cdn.botpress.cloud/webchat/v1/inject.js"></script>
+  <script>
+      window.botpressWebChat.init({
+          "composerPlaceholder": "Chat with Baymax",
+          "hostUrl": "https://cdn.botpress.cloud/webchat/v1",
+          "messagingUrl": "https://messaging.botpress.cloud",
+          "clientId": "f4481279-6697-45a8-bf33-bcb743e516e5",
+          "webhookId": "76d50808-1ece-4bcd-b772-1d2fc49ec2e2",
+          "lazySocket": true,
+          "themeName": "prism",
+          "botName": "Baymax",
+          "avatarUrl": "https://freepngimg.com/download/animation/59275-hamada-tadashi-company-walt-baymax-the-drawing.png",
+          "stylesheet": "https://webchat-styler-css.botpress.app/prod/eb316640-4a58-491e-8c94-6155e9848fc4/v76738/style.css",
+          "frontendVersion": "v1",
+          "useSessionStorage": true,
+          "theme": "prism",
+          "themeColor": "#2563eb"
+      });
+  </script>
 </div>
+
 
   
   <section  id="tips" class="text-gray-600 body-font" style="padding-top: 2rem;">
@@ -84,7 +84,7 @@
         <div class="h-full w-6 absolute inset-0 flex items-center justify-center">
           <div class="h-full w-1 bg-gray-200 pointer-events-none"></div>
         </div>
-        <div class="flex-shrink-0 w-6 h-6 rounded-full mt-10 sm:mt-0 inline-flex items-center justify-center bg-blue-500 text-white relative z-10 title-font font-medium text-sm">1</div>
+        <div class="flex-shrink-0 w-6 h-6 rounded-full mt-10 sm:mt-0 inline-flex items-center justify-center bg-black text-white relative z-10 title-font font-medium text-sm">1</div>
         <div class="flex-grow md:pl-8 pl-6 flex sm:items-center items-start flex-col sm:flex-row">
           <div class="flex-shrink-0 w-24 h-24 bg-blue-100 text-blue-500 rounded-full inline-flex items-center justify-center">
             <img src="/images/water-bottle.png" alt="water" class="tipsImages">
@@ -100,7 +100,7 @@
         <div class="h-full w-6 absolute inset-0 flex items-center justify-center">
           <div class="h-full w-1 bg-gray-200 pointer-events-none"></div>
         </div>
-        <div class="flex-shrink-0 w-6 h-6 rounded-full mt-10 sm:mt-0 inline-flex items-center justify-center bg-blue-500 text-white relative z-10 title-font font-medium text-sm">2</div>
+        <div class="flex-shrink-0 w-6 h-6 rounded-full mt-10 sm:mt-0 inline-flex items-center justify-center bg-black text-white relative z-10 title-font font-medium text-sm">2</div>
         <div class="flex-grow md:pl-8 pl-6 flex sm:items-center items-start flex-col sm:flex-row">
           <div class="flex-shrink-0 w-24 h-24 bg-blue-100 text-blue-500 rounded-full inline-flex items-center justify-center">
             <img src="/images/diet.png" alt="" class="tipsImages">
@@ -115,7 +115,7 @@
         <div class="h-full w-6 absolute inset-0 flex items-center justify-center">
           <div class="h-full w-1 bg-gray-200 pointer-events-none"></div>
         </div>
-        <div class="flex-shrink-0 w-6 h-6 rounded-full mt-10 sm:mt-0 inline-flex items-center justify-center bg-blue-500 text-white relative z-10 title-font font-medium text-sm">3</div>
+        <div class="flex-shrink-0 w-6 h-6 rounded-full mt-10 sm:mt-0 inline-flex items-center justify-center bg-black text-white relative z-10 title-font font-medium text-sm">3</div>
         <div class="flex-grow md:pl-8 pl-6 flex sm:items-center items-start flex-col sm:flex-row">
           <div class="flex-shrink-0 w-24 h-24 bg-blue-100 text-blue-500 rounded-full inline-flex items-center justify-center">
             <img src="/images/stress.png" alt="" class="tipsImages">
@@ -130,7 +130,7 @@
         <div class="h-full w-6 absolute inset-0 flex items-center justify-center">
           <div class="h-full w-1 bg-gray-200 pointer-events-none"></div>
         </div>
-        <div class="flex-shrink-0 w-6 h-6 rounded-full mt-10 sm:mt-0 inline-flex items-center justify-center bg-blue-500 text-white relative z-10 title-font font-medium text-sm">4</div>
+        <div class="flex-shrink-0 w-6 h-6 rounded-full mt-10 sm:mt-0 inline-flex items-center justify-center bg-black text-white relative z-10 title-font font-medium text-sm">4</div>
         <div class="flex-grow md:pl-8 pl-6 flex sm:items-center items-start flex-col sm:flex-row">
           <div class="flex-shrink-0 w-24 h-24 bg-blue-100 text-blue-500 rounded-full inline-flex items-center justify-center">
             <img src="/images/sugar-free.png" alt="" class="tipsImages">
@@ -177,7 +177,9 @@
             </div>
           </div>
         </div>
-  <section class="text-white-600 body-font relative" id="contact">
+      </div>
+    </div>
+        <section class="text-white-600 body-font relative" id="contact" style="display: flex; flex-direction: column; align-items: center; justify-content: center;">
           <div class="container px-5 py-24 mx-auto">
             <div class="flex flex-col text-center w-full mb-12">
               <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">Contact Us</h1>
@@ -204,15 +206,15 @@
                   </div>
                 </div>
                 <div class="p-2 w-full">
-                  <button type="button" onclick="sendMail()" class="mx-auto text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg">Button</button>
+                  <button type="button" onclick="sendMail()" class="mx-auto text-white bg-black border-0 py-2 px-8 focus:outline-none hover:bg-gray-600 rounded text-lg">Send</button>
                 </div>
               </div>
               
               
                 <div class="p-2 w-full pt-8 mt-8 border-t border-gray-200 text-center">
-                  <a class="text-indigo-500">example@email.com</a>
-                  <p class="leading-normal my-5">49 Smith St.
-                    <br>Saint Cloud, MN 56301
+                  <a class="text-black">narayanabhishek090@gmail.com</a>
+                  <p class="leading-normal my-5">109 Boys Hostel
+                    <br>Nitte, Karnataka
                   </p>
                   <span class="inline-flex">
                     <a class="text-gray-500">
@@ -244,9 +246,9 @@
         </div>
 
 
-</section>
+  </section>
   <!-- Footer -->
-  <footer class="bg-white-800 text-white mt-8 py-4">
+  <footer class="bg-white text-black mt-8 py-4">
     <div class="container mx-auto text-center">
       <p>&copy; 2023 Your Website. All rights reserved.</p>
     </div>
